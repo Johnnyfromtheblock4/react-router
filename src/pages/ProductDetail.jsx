@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import ProductDetailCard from "../components/ProductDetailCard";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -16,7 +17,7 @@ const ProductDetail = () => {
     <div className="container">
       <div className="row">
         <div className="col-12">
-          Prodotto Dettaglio
+          <ProductDetailCard />
         </div>
       </div>
     </div>
